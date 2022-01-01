@@ -1,8 +1,4 @@
-use super::greeting::*;
-use super::pipe::*;
-use super::rectangle::*;
-use crate::add_two;
-use crate::guess::Guess;
+use adder::{greeting::greeting, guess::Guess, pipe::pipe, rectangle::Rectangle};
 
 #[test]
 fn exploration() {
@@ -58,11 +54,6 @@ fn larger_can_hold_smaller2() {
     };
 
     assert!(!smaller.can_hold(&smaller));
-}
-
-#[test]
-fn add_two_test() {
-    assert_eq!(add_two(1), 3);
 }
 
 #[test]

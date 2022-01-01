@@ -1,11 +1,4 @@
-mod rectangle;
-
-mod greeting;
-mod guess;
-mod pipe;
-#[cfg(test)]
-mod tests;
-
-pub fn add_two(input: i32) -> i32 {
-    input + 2
-}
+pub mod greeting;
+pub mod guess;
+pub mod pipe;
+pub mod rectangle;
